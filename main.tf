@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    mycloud = {
+      source  = "hashicorp/oci"
+      version = "4.36.0"
+    }
+  }
+}
+
 provider "oci" {}
 
 resource "oci_core_instance" "generated_oci_core_instance" {

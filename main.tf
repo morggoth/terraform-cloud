@@ -7,19 +7,19 @@ terraform {
   }
 }
 
-variable "tenancy_ocid" {}
-variable "user_ocid" {}
-variable "fingerprint" {}
-variable "private_key" {}
-variable "region" {}
+# variable "tenancy_ocid" {}
+# variable "user_ocid" {}
+# variable "fingerprint" {}
+# variable "private_key" {}
+# variable "region" {}
 
-provider "oci" {
-  tenancy_ocid = var.tenancy_ocid
-  user_ocid = var.user_ocid
-  fingerprint = var.fingerprint
-  region = var.region
-  private_key = var.private_key
-}
+# provider "oci" {
+#   tenancy_ocid = var.tenancy_ocid
+#   user_ocid = var.user_ocid
+#   fingerprint = var.fingerprint
+#   region = var.region
+#   private_key = var.private_key
+# }
 
 resource "oci_core_instance" "generated_oci_core_instance" {
 	agent_config {
